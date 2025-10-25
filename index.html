@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Exemplos Incríveis de JavaScript</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🚀 Exemplos Incríveis de JavaScript</h1>
+            <p>Descubra o poder do JavaScript através de exemplos interativos</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="tab1">Cores de Fundo</button>
+            <button class="tab-btn" data-tab="tab2">Mudança de Fonte</button>
+            <button class="tab-btn" data-tab="tab3">Galeria Embaralhada</button>
+            <button class="tab-btn" data-tab="tab4">Animação de Objeto</button>
+            <button class="tab-btn" data-tab="tab5">Contador</button>
+            <button class="tab-btn" data-tab="tab6">Calculadora</button>
+            <button class="tab-btn" data-tab="tab7">Lista de Tarefas</button>
+            <button class="tab-btn" data-tab="tab8">Relógio Digital</button>
+            <button class="tab-btn" data-tab="tab9">Gerador de Cores</button>
+            <button class="tab-btn" data-tab="tab10">Quiz Interativo</button>
+        </nav>
+
+        <main class="content">
+            <!-- Aba 1: Mudança de Cor de Fundo -->
+            <div id="tab1" class="tab-content active">
+                <h2>🎨 Mudança de Cor de Fundo</h2>
+                <p>Clique no botão para alterar a cor de fundo da página!</p>
+                <button id="changeColorBtn" class="example-btn">Mudar Cor de Fundo</button>
+                <div class="color-display">
+                    <span>Cor atual: </span>
+                    <span id="currentColor">#6366f1</span>
+                </div>
+            </div>
+
+            <!-- Aba 2: Mudança de Fonte -->
+            <div id="tab2" class="tab-content">
+                <h2>📝 Mudança de Fonte</h2>
+                <p>Experimente diferentes fontes para toda a página!</p>
+                <button id="changeFontBtn" class="example-btn">Mudar Fonte</button>
+                <div class="font-display">
+                    <span>Fonte atual: </span>
+                    <span id="currentFont">Inter</span>
+                </div>
+            </div>
+
+            <!-- Aba 3: Galeria Embaralhada -->
+            <div id="tab3" class="tab-content">
+                <h2>🖼️ Galeria Embaralhada</h2>
+                <p>Clique para embaralhar as imagens da galeria!</p>
+                <button id="shuffleGalleryBtn" class="example-btn">Embaralhar Galeria</button>
+                <div class="gallery" id="gallery">
+                    <div class="gallery-item" style="background: linear-gradient(45deg, #ff6b6b, #feca57);">1</div>
+                    <div class="gallery-item" style="background: linear-gradient(45deg, #48dbfb, #0abde3);">2</div>
+                    <div class="gallery-item" style="background: linear-gradient(45deg, #ff9ff3, #f368e0);">3</div>
+                    <div class="gallery-item" style="background: linear-gradient(45deg, #54a0ff, #2e86de);">4</div>
+                    <div class="gallery-item" style="background: linear-gradient(45deg, #5f27cd, #341f97);">5</div>
+                    <div class="gallery-item" style="background: linear-gradient(45deg, #00d2d3, #01a3a4);">6</div>
+                </div>
+            </div>
+
+            <!-- Aba 4: Animação de Objeto -->
+            <div id="tab4" class="tab-content">
+                <h2>✨ Animação de Objeto</h2>
+                <p>Clique para alterar a animação do objeto!</p>
+                <button id="changeAnimationBtn" class="example-btn">Mudar Animação</button>
+                <div class="animation-container">
+                    <div id="animatedObject" class="animated-object bounce"></div>
+                </div>
+                <div class="animation-display">
+                    <span>Animação atual: </span>
+                    <span id="currentAnimation">bounce</span>
+                </div>
+            </div>
+
+            <!-- Aba 5: Contador -->
+            <div id="tab5" class="tab-content">
+                <h2>🔢 Contador Interativo</h2>
+                <p>Use os botões para incrementar ou decrementar o contador!</p>
+                <div class="counter-container">
+                    <button id="decrementBtn" class="counter-btn">-</button>
+                    <span id="counterValue" class="counter-value">0</span>
+                    <button id="incrementBtn" class="counter-btn">+</button>
+                </div>
+                <button id="resetCounterBtn" class="example-btn">Resetar</button>
+            </div>
+
+            <!-- Aba 6: Calculadora -->
+            <div id="tab6" class="tab-content">
+                <h2>🧮 Calculadora Simples</h2>
+                <p>Uma calculadora básica feita com JavaScript!</p>
+                <div class="calculator">
+                    <input type="text" id="calcDisplay" class="calc-display" readonly>
+                    <div class="calc-buttons">
+                        <button class="calc-btn clear">C</button>
+                        <button class="calc-btn operator">÷</button>
+                        <button class="calc-btn operator">×</button>
+                        <button class="calc-btn operator">-</button>
+                        <button class="calc-btn number">7</button>
+                        <button class="calc-btn number">8</button>
+                        <button class="calc-btn number">9</button>
+                        <button class="calc-btn operator">+</button>
+                        <button class="calc-btn number">4</button>
+                        <button class="calc-btn number">5</button>
+                        <button class="calc-btn number">6</button>
+                        <button class="calc-btn equals" rowspan="2">=</button>
+                        <button class="calc-btn number">1</button>
+                        <button class="calc-btn number">2</button>
+                        <button class="calc-btn number">3</button>
+                        <button class="calc-btn number zero">0</button>
+                        <button class="calc-btn number">.</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aba 7: Lista de Tarefas -->
+            <div id="tab7" class="tab-content">
+                <h2>📋 Lista de Tarefas</h2>
+                <p>Adicione, remova e marque tarefas como concluídas!</p>
+                <div class="todo-container">
+                    <div class="todo-input-container">
+                        <input type="text" id="todoInput" placeholder="Digite uma nova tarefa...">
+                        <button id="addTodoBtn" class="example-btn">Adicionar</button>
+                    </div>
+                    <ul id="todoList" class="todo-list"></ul>
+                </div>
+            </div>
+
+            <!-- Aba 8: Relógio Digital -->
+            <div id="tab8" class="tab-content">
+                <h2>🕐 Relógio Digital</h2>
+                <p>Um relógio digital que atualiza em tempo real!</p>
+                <div class="clock-container">
+                    <div id="digitalClock" class="digital-clock"></div>
+                    <div id="dateDisplay" class="date-display"></div>
+                </div>
+            </div>
+
+            <!-- Aba 9: Gerador de Cores -->
+            <div id="tab9" class="tab-content">
+                <h2>🌈 Gerador de Cores</h2>
+                <p>Gere cores aleatórias e veja seus códigos!</p>
+                <button id="generateColorBtn" class="example-btn">Gerar Cor Aleatória</button>
+                <div class="color-generator">
+                    <div id="colorPreview" class="color-preview"></div>
+                    <div class="color-codes">
+                        <div>HEX: <span id="hexCode">#ff6b6b</span></div>
+                        <div>RGB: <span id="rgbCode">rgb(255, 107, 107)</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aba 10: Quiz Interativo -->
+            <div id="tab10" class="tab-content">
+                <h2>🧠 Quiz Interativo</h2>
+                <p>Teste seus conhecimentos com este quiz de JavaScript!</p>
+                <div class="quiz-container">
+                    <div id="quizQuestion" class="quiz-question"></div>
+                    <div id="quizOptions" class="quiz-options"></div>
+                    <div class="quiz-info">
+                        <span>Pontuação: <span id="quizScore">0</span></span>
+                        <span>Questão: <span id="questionNumber">1</span>/5</span>
+                    </div>
+                    <button id="nextQuestionBtn" class="example-btn" style="display: none;">Próxima Questão</button>
+                    <button id="restartQuizBtn" class="example-btn" style="display: none;">Reiniciar Quiz</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
